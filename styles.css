@@ -29,8 +29,11 @@ nav a:hover {
 main section {
   padding: 2rem;
   max-width: 800px;
-  margin-bottom: 3rem;
   margin: auto;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 footer {
