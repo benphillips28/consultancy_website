@@ -68,11 +68,11 @@ footer {
 }
 
 .footer-icon.email {
-  background-image: url('images/icons/email.svg');
+  background-image: url('images/email.svg');
 }
 
 .footer-icon.linkedin {
-  background-image: url('images/icons/linkedin.png');
+  background-image: url('images/linkedin.png');
 }
 
 header h1 {
