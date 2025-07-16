@@ -53,18 +53,19 @@ footer {
 
 .footer-icon {
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-size: contain;
+  height: 45px;
+  width: 45px; /* container width (needed for positioning) */
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 0.5rem;
   opacity: 0.8;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, filter 0.2s ease;
 }
 
 .footer-icon:hover {
   opacity: 1;
+  filter: brightness(0.8) sepia(0.2) hue-rotate(-10deg) saturate(1.5);
 }
 
 .footer-icon.email {
