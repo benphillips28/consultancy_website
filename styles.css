@@ -89,7 +89,7 @@ h1, h2, h3 {
 
 .service-section {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-top: 3rem;
   max-width: 1200px; /* increased from 800px */
