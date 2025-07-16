@@ -103,12 +103,13 @@ h1, h2, h3 {
 }
 
 .service-image {
-  width: 300px;   /* doubled from 150px */
-  height: 300px;  /* doubled from 150px */
-  background-color: #ccc;
+  max-width: 300px;      /* limits maximum width */
+  width: 100%;           /* allows scaling within container */
+  height: auto;
   border-radius: 8px;
   flex-shrink: 0;
 }
+
 
 .service-text {
   flex: 1;
