@@ -4,11 +4,11 @@ body {
   padding: 0 3rem;
   line-height: 1.8;
   color: #2e2e2e;
-  background-color: #6f8f6f; /* very light sage */
+  background-color: #f5f8f5; /* very light sage */
 }
 
 header {
-  background-color: #a8bfa8; /* soft sage */
+  background-color: #6f8f6f; /* soft sage */
   color: white;
   padding: 1rem 0;
   text-align: center;
