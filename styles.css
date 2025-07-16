@@ -1,17 +1,16 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding: 0 3rem;
   line-height: 1.6;
-  color: #333;
-  background-color: #f4f9f4;
+  color: #2e2e2e;
+  background-color: #f5f8f4; /* softer off-white with a hint of green */
 }
 
 header {
-  background-color: #334155;
+  background-color: #2f5d34; /* rich forest green */
   color: white;
-  padding: 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -38,31 +37,33 @@ section {
 }
 
 footer {
-  background-color: #e0e0e0;
+  background-color: #dbe7d2; /* pale green-grey */
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
 }
 
 header h1 {
-      color: white;
-    }
+  color: white;
+}
+
 h1, h2, h3 {
-      color: #334155;
-    }
+  color: #2f5d34; /* matching the header for consistency */
+}
 
 .button {
-  background-color: #334155;
+  background-color: #4a7c59; /* muted moss green */
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   display: inline-block;
   margin-top: 1rem;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #1b5e20;
+  background-color: #3b6247; /* deeper moss green on hover */
 }
 
 .profile {
