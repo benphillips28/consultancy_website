@@ -63,3 +63,17 @@ h1, h2, h3 {
 .button:hover {
   background-color: #1b5e20;
 }
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
