@@ -4,11 +4,11 @@ body {
   padding: 0 3rem;
   line-height: 1.6;
   color: #2e2e2e;
-  background-color: #f5f8f4; /* softer off-white with a hint of green */
+  background-color: #f7faf7; /* very light minty green */
 }
 
 header {
-  background-color: #2f5d34; /* rich forest green */
+  background-color: #1d3d24; /* dark pine green */
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -37,7 +37,7 @@ section {
 }
 
 footer {
-  background-color: #dbe7d2; /* pale green-grey */
+  background-color: #e3e9e3; /* soft gray-green */
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
@@ -48,11 +48,11 @@ header h1 {
 }
 
 h1, h2, h3 {
-  color: #2f5d34; /* matching the header for consistency */
+  color: #1d3d24; /* same dark pine green */
 }
 
 .button {
-  background-color: #4a7c59; /* muted moss green */
+  background-color: #578558; /* soft muted green */
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -63,7 +63,7 @@ h1, h2, h3 {
 }
 
 .button:hover {
-  background-color: #3b6247; /* deeper moss green on hover */
+  background-color: #3e5d3e; /* darker green for hover */
 }
 
 .profile {
