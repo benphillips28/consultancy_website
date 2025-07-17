@@ -145,7 +145,7 @@ h1, h2, h3 {
 }
 
 .service-image {
-  max-width: 500px;      /* limits maximum width */
+  max-width: 450px;      /* limits maximum width */
   width: 100%;           /* allows scaling within container */
   height: auto;
   border-radius: 8px;
