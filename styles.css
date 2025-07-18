@@ -183,3 +183,8 @@ h1, h2, h3 {
     height: auto;
   }
 }
+
+.buffered-text {
+  padding-left: 15%;
+  padding-right: 15%;
+}
