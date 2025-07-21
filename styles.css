@@ -8,10 +8,17 @@ body {
 }
 
 header {
-  background-color: #6f8f6f; /* soft sage */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.75rem;
+  background-color: #6f8f6f; /* keep your green background */
   color: white;
-  padding: 0.5rem 0;
-  text-align: center;
+}
+
+header img {
+  height: 65px;
+  width: auto;
 }
 
 nav a {
@@ -182,18 +189,4 @@ h1, h2, h3 {
     width: 80%;
     height: auto;
   }
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1.75rem;
-  background-color: #6f8f6f; /* keep your green background */
-  color: white;
-}
-
-header img {
-  height: 65px;
-  width: auto;
 }
