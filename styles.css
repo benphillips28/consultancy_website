@@ -1,7 +1,7 @@
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
-  padding: 0 3rem;
+  padding: 0;
   line-height: 1.8;
   color: #2e2e2e;
   background-color: #f5f8f5; /* very light sage */
@@ -182,9 +182,4 @@ h1, h2, h3 {
     width: 80%;
     height: auto;
   }
-}
-
-.buffered-text {
-  padding-left: 15%;
-  padding-right: 15%;
 }
