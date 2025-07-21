@@ -185,6 +185,16 @@ h1, h2, h3 {
     text-align: left;
   }
 
+  hr.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #b0c4b0; /* muted sage line */
+  width: 60%;
+  margin: 2rem auto; /* spacing above/below, centered */
+  border-radius: 1px;
+}
+
+
   .sidepicture-image {
     width: 80%;
     height: auto;
