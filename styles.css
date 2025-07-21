@@ -190,7 +190,7 @@ h1, h2, h3 {
   height: 2px;
   background-color: #b0c4b0; /* soft sage */
   width: 40%;                /* shorter line: adjust as you like */
-  margin: 1.75rem auto;         /* 1rem above and below, centered horizontally */
+  margin: 3rem auto;         /* 1rem above and below, centered horizontally */
   border-radius: 1px;        /* rounded ends for subtle polish */
 }
 
