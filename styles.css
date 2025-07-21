@@ -188,12 +188,11 @@ h1, h2, h3 {
   hr.section-divider {
   border: none;
   height: 2px;
-  background-color: #b0c4b0; /* muted sage line */
-  width: 60%;
-  margin: 2rem auto; /* spacing above/below, centered */
-  border-radius: 1px;
+  background-color: #b0c4b0; /* soft sage */
+  width: 40%;                /* shorter line: adjust as you like */
+  margin: 1rem auto;         /* 1rem above and below, centered horizontally */
+  border-radius: 1px;        /* rounded ends for subtle polish */
 }
-
 
   .sidepicture-image {
     width: 80%;
