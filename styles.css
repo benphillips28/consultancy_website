@@ -12,7 +12,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1.75rem;
-  background-color: #6f8f6f; /* green background */
+  background-color: #6f8f6f;
   color: white;
 }
 
@@ -40,7 +40,7 @@ main section {
 
 section {
   margin: 1.5rem 0 3rem;
-  background-color: #e9f0e9; /* card sage background */
+  background-color: #e9f0e9;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -100,7 +100,7 @@ header h1 {
 }
 
 h1, h2, h3 {
-  color: #6f8f6f; /* sage for headings */
+  color: #6f8f6f;
 }
 
 .button {
@@ -135,19 +135,11 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
-.sidepicture-heading {
-  margin-bottom: 0.5rem; /* tighter spacing below the heading */
-  padding: 0 1rem;       /* matches sidepicture-text padding */
-  text-align: left;
-}
-
-.sidepicture-heading.align-right {
-  text-align: right;
-}
+/* Sidepicture Section */
 
 .sidepicture-section {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   margin-bottom: 3rem;
   max-width: 1200px;
@@ -170,15 +162,20 @@ h1, h2, h3 {
 
 .sidepicture-text {
   flex: 1;
-  position: relative;
-  padding-top: 2.5rem; /* to offset absolute h2 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.sidepicture-text h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 0 1rem 0;
+.sidepicture-heading {
+  margin: 0 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 1.75rem;
+  text-align: left;
+}
+
+.sidepicture-heading.align-right {
+  text-align: right;
 }
 
 .sidepicture-text p {
@@ -198,6 +195,7 @@ hr.section-divider {
   border-radius: 1px;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 900px) {
   .sidepicture-section,
   .sidepicture-section.reverse {
@@ -214,5 +212,10 @@ hr.section-divider {
   .sidepicture-image {
     width: 80%;
     height: auto;
+  }
+
+  .sidepicture-heading,
+  .sidepicture-heading.align-right {
+    text-align: center;
   }
 }
