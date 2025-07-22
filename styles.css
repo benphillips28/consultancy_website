@@ -153,13 +153,11 @@ h1, h2, h3 {
 
 .sidepicture-image {
   width: 450px;           /* or whatever width fits your layout */
-  height: 300px;          /* consistent height for all images */
+  height: 350px;          /* consistent height for all images */
   object-fit: cover;      /* crops to fit box without distortion */
   border-radius: 8px;
   flex-shrink: 0;
 }
-
-
 
 .sidepicture-text {
   flex: 1;
@@ -195,8 +193,3 @@ h1, h2, h3 {
   border-radius: 1px;        /* rounded ends for subtle polish */
 }
 
-  .sidepicture-image {
-    width: 80%;
-    height: auto;
-  }
-}
