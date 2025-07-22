@@ -136,10 +136,13 @@ h1, h2, h3 {
 }
 
 .sidepicture-heading {
-  max-width: 1200px;
-  margin: 0 auto 1rem auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-bottom: 0.5rem; /* tighter spacing below the heading */
+  padding: 0 1rem;       /* matches sidepicture-text padding */
+  text-align: left;
+}
+
+.sidepicture-heading.align-right {
+  text-align: right;
 }
 
 .sidepicture-section {
