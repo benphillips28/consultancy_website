@@ -161,6 +161,8 @@ h1, h2, h3 {
 
 .sidepicture-text {
   flex: 1;
+  position: relative;
+  padding-top: 2.5rem; /* space for h2 if needed */
 }
 
 .sidepicture-text p {
@@ -169,6 +171,13 @@ h1, h2, h3 {
 
 .sidepicture-text li {
   margin-left: 1.5rem;
+}
+
+.sidepicture-text h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 0 1rem 0;
 }
 
 @media (max-width: 900px) {
