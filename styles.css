@@ -139,7 +139,7 @@ h1, h2, h3 {
 
 .sidepicture-section {
   display: flex;
-  align-items: flex-start; /* aligns image top with text top */
+  align-items: flex-start; /* aligns top of image with top of text content */
   gap: 1rem;
   margin-bottom: 3rem;
   max-width: 1200px;
@@ -168,11 +168,14 @@ h1, h2, h3 {
 }
 
 .sidepicture-text h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
-  padding: 0;
+  font-size: 1.5rem;            /* normal h2 sizing */
+  margin: 0 0 0.75rem 0;        /* reduce spacing below */
+  padding: 0;                   /* no unnecessary padding */
   text-align: left;
+}
+
+.sidepicture-section.reverse .sidepicture-text h2 {
+  text-align: left;             /* aligns to start of text even on reversed side */
 }
 
 .sidepicture-text p {
