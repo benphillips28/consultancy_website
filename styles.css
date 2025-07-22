@@ -12,7 +12,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1.75rem;
-  background-color: #6f8f6f; /* keep your green background */
+  background-color: #6f8f6f; /* green background */
   color: white;
 }
 
@@ -39,9 +39,8 @@ main section {
 }
 
 section {
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
-  background-color: #e9f0e9; /* subtle card sage background */
+  margin: 1.5rem 0 3rem;
+  background-color: #e9f0e9; /* card sage background */
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -61,7 +60,7 @@ section {
 }
 
 footer {
-  background-color: #e9f0e9; /* consistent with your palette */
+  background-color: #e9f0e9;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
@@ -73,8 +72,8 @@ footer {
 
 .footer-icon {
   display: inline-block;
+  width: 45px;
   height: 45px;
-  width: 45px; /* container width (needed for positioning) */
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -101,11 +100,11 @@ header h1 {
 }
 
 h1, h2, h3 {
-  color: #6f8f6f; /* sage accent for headings */
+  color: #6f8f6f; /* sage for headings */
 }
 
 .button {
-  background-color: #6f8f6f; /* muted sage accent */
+  background-color: #6f8f6f;
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -117,7 +116,7 @@ h1, h2, h3 {
 }
 
 .button:hover {
-  background-color: #7f997f; /* slightly darker sage on hover */
+  background-color: #7f997f;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
@@ -141,10 +140,10 @@ h1, h2, h3 {
   align-items: center;
   gap: 1rem;
   margin-bottom: 3rem;
-  max-width: 1200px; /* increased from 800px */
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0; /* smaller side padding */
+  padding: 0;
 }
 
 .sidepicture-section.reverse {
@@ -152,9 +151,9 @@ h1, h2, h3 {
 }
 
 .sidepicture-image {
-  width: 500px;           /* or whatever width fits your layout */
-  height: 300px;          /* consistent height for all images */
-  object-fit: cover;      /* crops to fit box without distortion */
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 8px;
   flex-shrink: 0;
 }
@@ -162,7 +161,14 @@ h1, h2, h3 {
 .sidepicture-text {
   flex: 1;
   position: relative;
-  padding-top: 2.5rem; /* space for h2 if needed */
+  padding-top: 2.5rem; /* to offset absolute h2 */
+}
+
+.sidepicture-text h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 0 1rem 0;
 }
 
 .sidepicture-text p {
@@ -173,11 +179,13 @@ h1, h2, h3 {
   margin-left: 1.5rem;
 }
 
-.sidepicture-text h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 0 1rem 0;
+hr.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #b0c4b0;
+  width: 40%;
+  margin: 3rem auto;
+  border-radius: 1px;
 }
 
 @media (max-width: 900px) {
@@ -187,18 +195,14 @@ h1, h2, h3 {
     align-items: center;
     text-align: center;
   }
-  
+
   .sidepicture-text li {
     margin-left: 0;
     text-align: left;
   }
 
-  hr.section-divider {
-  border: none;
-  height: 2px;
-  background-color: #b0c4b0; /* soft sage */
-  width: 40%;                /* shorter line: adjust as you like */
-  margin: 3rem auto;         /* 1rem above and below, centered horizontally */
-  border-radius: 1px;        /* rounded ends for subtle polish */
+  .sidepicture-image {
+    width: 80%;
+    height: auto;
+  }
 }
-
