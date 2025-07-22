@@ -169,7 +169,7 @@ h1, h2, h3 {
 }
 
 .sidepicture-text h2 {
-  font-size: 1rem;            /* normal h2 sizing */
+  font-size: 1.5rem;            /* normal h2 sizing */
   margin: 0 0 0 0;        /* reduce spacing below */
   padding: 0;                   /* no unnecessary padding */
   text-align: left;
