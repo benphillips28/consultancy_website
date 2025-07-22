@@ -168,17 +168,6 @@ h1, h2, h3 {
   justify-content: flex-start;
 }
 
-.sidepicture-text h2 {
-  font-size: 1.5rem;            /* normal h2 sizing */
-  margin: 0 0 0 0;        /* reduce spacing below */
-  padding: 0;                   /* no unnecessary padding */
-  text-align: left;
-}
-
-.sidepicture-section.reverse .sidepicture-text h2 {
-  text-align: left;             /* aligns to start of text even on reversed side */
-}
-
 .sidepicture-text p {
   margin: 0.5rem 0;
 }
