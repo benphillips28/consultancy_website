@@ -153,7 +153,7 @@ h1, h2, h3 {
 
 .sidepicture-image {
   width: 450px;           /* or whatever width fits your layout */
-  height: 350px;          /* consistent height for all images */
+  height: 300px;          /* consistent height for all images */
   object-fit: cover;      /* crops to fit box without distortion */
   border-radius: 8px;
   flex-shrink: 0;
