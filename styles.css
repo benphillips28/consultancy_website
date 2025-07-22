@@ -139,7 +139,7 @@ h1, h2, h3 {
 
 .sidepicture-section {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* aligns image top with text top */
   gap: 1rem;
   margin-bottom: 3rem;
   max-width: 1200px;
@@ -167,15 +167,12 @@ h1, h2, h3 {
   justify-content: flex-start;
 }
 
-.sidepicture-heading {
-  margin: 0 0 1rem;
-  padding: 0 0.5rem;
+.sidepicture-text h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
   font-size: 1.75rem;
+  padding: 0;
   text-align: left;
-}
-
-.sidepicture-heading.align-right {
-  text-align: right;
 }
 
 .sidepicture-text p {
