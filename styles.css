@@ -135,6 +135,13 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
+.sidepicture-heading {
+  max-width: 1200px;
+  margin: 0 auto 1rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .sidepicture-section {
   display: flex;
   align-items: center;
