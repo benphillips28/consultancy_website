@@ -104,8 +104,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 3rem; /* or adjust as needed */
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .button {
