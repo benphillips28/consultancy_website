@@ -103,11 +103,10 @@ h1, h2, h3 {
   color: #6f8f6f;
 }
 
-<style>
-  h1 {
-    font-family: 'Verdana Pro Cond Black', sans-serif;
-  }
-</style>
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+}
 
 .button {
   background-color: #6f8f6f;
