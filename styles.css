@@ -200,3 +200,10 @@ h1, h2, h3 {
     text-align: center;
   }
 }
+
+<style>
+  .content-box {
+    width: 50%;
+    text-align: left;
+  }
+</style>
