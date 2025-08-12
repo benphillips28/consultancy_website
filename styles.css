@@ -41,7 +41,7 @@ header img {
   }
 
   header img {
-    height: 65px;
+    height: 70px;
     width: auto;
     display: block;
   }
@@ -133,9 +133,29 @@ h1, h2, h3 { color: #3F8285; }
 .profile { display: flex; align-items: flex-start; gap: 1rem; margin-top: 2rem; }
 .profile-photo { width: 150px; height: auto; border-radius: 8px; object-fit: cover; max-width: 100%; }
 
-.profiles { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
-.profile-card { flex: 1 1 45%; max-width: 45%; text-align: center; }
-.profile-card img { max-width: 85%; height: auto; border-radius: 8px; margin: 0 auto 1rem; display: block; }
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.profile-card {
+  flex: 1 1 45%;
+  max-width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card img {
+  max-width: 85%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto 1rem;
+  display: block;
+}
 
 @media (max-width: 640px) {
   .profiles {
@@ -147,19 +167,9 @@ h1, h2, h3 { color: #3F8285; }
     max-width: 100% !important;
     text-align: left;
   }
-  [style*="max-width: 45%"], [style*="flex: 1 1 45%"] {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
-    text-align: left !important;
+  .profile-card img {
+    max-width: 70%;
   }
-  img[style*="height: 100%"] {
-    height: auto !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    display: block !important;
-  }
-  .profile-card img { max-width: 70%; }
-  .profiles { gap: 1.25rem; }
 }
 
 .sidepicture-section {
@@ -192,45 +202,21 @@ h1, h2, h3 { color: #3F8285; }
 .section-image { display: block; margin: 1rem auto 0; width: 100%; }
 @media (min-width: 900px) { .section-image { width: 50%; } }
 
-.testimonials-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
-
-.testimonials-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
 .testimonials-image {
   width: 500px;
   height: 450px;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-  flex-shrink: 0;
   display: block;
-  margin: 0.5rem 0;
+  margin: 1rem auto 0.5rem;
 }
 
 @media (max-width: 900px) {
-  .testimonials-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .testimonials-text {
-    text-align: left;
-  }
   .testimonials-image {
-    width: 40%;
+    width: calc(90% - 1rem);
     height: auto;
-    border-radius: 8px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
