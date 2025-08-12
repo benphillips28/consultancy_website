@@ -135,7 +135,7 @@ h1, h2, h3 { color: #3F8285; }
 
 .profiles { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
 .profile-card { flex: 1 1 45%; max-width: 45%; text-align: center; }
-.profile-card img { max-width: 85%; height: auto; border-radius: 8px; margin: 0  auto 1rem; display: block; }
+.profile-card img { max-width: 85%; height: auto; border-radius: 8px; margin: 0 auto 1rem; display: block; }
 
 @media (max-width: 640px) {
   [style*="max-width: 45%"], [style*="flex: 1 1 45%"] {
@@ -183,11 +183,19 @@ h1, h2, h3 { color: #3F8285; }
 .section-image { display: block; margin: 1rem auto 0; width: 100%; }
 @media (min-width: 900px) { .section-image { width: 50%; } }
 
-.sidepicture-image.testimonials-image {
-  height: 400px;
+.testimonials-image {
+  width: 500px;
+  height: 450px;
   object-fit: cover;
   object-position: center;
+  border-radius: 8px;
   display: block;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 1rem auto 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .testimonials-image {
+    width: 90%;
+    height: auto;
+  }
 }
