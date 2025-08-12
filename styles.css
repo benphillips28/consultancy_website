@@ -82,8 +82,8 @@ nav a:hover {
 @media (min-width: 900px) {
   .container-md,
   .container-lg {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
