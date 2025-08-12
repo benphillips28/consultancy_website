@@ -249,6 +249,7 @@ h1, h2, h3 { color: #3F8285; }
 
 @media (min-width: 768px) {
   section.container-lg.text-center {
+    padding-top: 10rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
