@@ -28,7 +28,7 @@ header {
 }
 
 header img {
-  height: 80px;
+  height: 75px;
   width: auto;
 }
 
@@ -264,6 +264,10 @@ h1, h2, h3 {
 }
 
 @media (max-width: 640px) {
+  header img {
+    height: 65px;
+  }
+
   .profile-card {
     flex: 1 1 100%;
     max-width: 100%;
