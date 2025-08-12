@@ -18,7 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header */
 header {
   display: flex;
   align-items: center;
@@ -35,27 +34,35 @@ header img {
 
 @media (max-width: 640px) {
   header {
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  header img {
+    height: 65px;
+    width: auto;
+    display: block;
   }
 
   nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 0.5rem; /* reduced spacing */
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.15rem;
   }
 
   nav a {
-    display: inline-block;
     margin: 0;
-    padding: 0.2rem 0.3rem; /* tighter padding */
-    font-size: 0.9rem; /* slightly smaller text */
+    padding: 0.1rem 0;
+    line-height: 1.2;
+    font-size: 0.95rem;
   }
 }
 
-/* Nav */
 nav a {
   color: white;
   margin: 0 1rem;
@@ -67,13 +74,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Containers / layout helpers */
 .container-md { max-width: 800px; margin: 3rem auto; }
 .container-lg { max-width: 1150px; margin: 3rem auto; }
 .text-center { text-align: center; }
 .pad-15pct { padding-left: 15%; padding-right: 15%; }
 
-/* Sections */
 main section { padding: 0; max-width: 800px; margin: auto; }
 section {
   margin: 1.5rem 0 3rem;
@@ -83,11 +88,9 @@ section {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* Images */
 img { max-width: 100%; height: auto; }
 h1 img, h2 img, h3 img, p img { display: inline; vertical-align: middle; }
 
-/* Footer */
 footer {
   background-color: #e4f4f5;
   text-align: center;
@@ -112,7 +115,6 @@ footer {
 .footer-icon.email { background-image: url('images/email.png'); }
 .footer-icon.linkedin { background-image: url('images/linkedin.png'); }
 
-/* Headings & buttons */
 header h1 { color: white; }
 h1, h2, h3 { color: #3F8285; }
 .button {
@@ -128,7 +130,6 @@ h1, h2, h3 { color: #3F8285; }
 }
 .button:hover { background-color: #7f997f; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
 
-/* People profiles */
 .profile { display: flex; align-items: flex-start; gap: 1rem; margin-top: 2rem; }
 .profile-photo { width: 150px; height: auto; border-radius: 8px; object-fit: cover; max-width: 100%; }
 
@@ -152,7 +153,6 @@ h1, h2, h3 { color: #3F8285; }
   .profiles { gap: 1.25rem; }
 }
 
-/* Sidepicture blocks */
 .sidepicture-section {
   display: flex;
   align-items: flex-start;
@@ -180,7 +180,6 @@ h1, h2, h3 { color: #3F8285; }
   .sidepicture-heading, .sidepicture-heading.align-right { text-align: center; }
 }
 
-/* Util for images inside sections (e.g., testimonials image) */
 .section-image { display: block; margin: 1rem auto 0; width: 100%; }
 @media (min-width: 900px) { .section-image { width: 50%; } }
 
@@ -190,5 +189,5 @@ h1, h2, h3 { color: #3F8285; }
   object-position: center;
   display: block;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem; 
+  margin-bottom: 0.5rem;
 }
