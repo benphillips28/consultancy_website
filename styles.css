@@ -35,29 +35,27 @@ header img {
 
 @media (max-width: 640px) {
   header {
-    display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
-    text-align: initial;
+    padding: 0.5rem 1rem;
   }
+
   header img {
     height: 65px;
   }
+
   nav {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
     align-items: flex-end;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 0.35rem;
   }
+
   nav a {
-    display: block;
     margin: 0;
-    padding: 0.25rem 0.25rem;
-    text-align: right;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
   }
 }
 
