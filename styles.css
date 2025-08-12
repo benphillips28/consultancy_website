@@ -320,3 +320,62 @@ h1, h2, h3 {
     object-fit: cover;
   }
 }
+
+/* Testimonials hero with background image */
+.testimonials-hero {
+  position: relative;
+  width: 95%;
+  max-width: 1150px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: url("images/footprints.jpg") center/cover no-repeat;
+}
+
+/* Content layer */
+.testimonials-hero__content {
+  position: relative;
+  padding: clamp(1rem, 3vw, 2rem);
+  min-height: 420px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* Subtle dark overlay for readability on busy areas */
+.testimonials-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35));
+}
+
+/* Quote blocks */
+.testimonial {
+  color: #fff;
+  text-align: left;
+  backdrop-filter: blur(1px);
+  background: rgba(0,0,0,0.25);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  line-height: 1.6;
+}
+
+.testimonial em {
+  font-style: italic;
+  display: block;
+}
+
+.testimonial .attribution {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* Make layout mobile-friendly */
+@media (max-width: 640px) {
+  .testimonials-hero__content {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+}
