@@ -185,7 +185,10 @@ h1, h2, h3 { color: #3F8285; }
 @media (min-width: 900px) { .section-image { width: 50%; } }
 
 .sidepicture-image.testimonials-image {
-  height: 450px;
+  height: 400px;
   object-fit: cover;
   object-position: center;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; 
 }
