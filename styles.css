@@ -247,9 +247,9 @@ h1, h2, h3 { color: #3F8285; }
   }
 }
 
-/* EXTRA PADDING FOR INTRO SECTIONS ON DESKTOP ONLY */
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   section.container-lg.text-center {
-    padding: 4rem 2rem; /* top/bottom 4rem, left/right 2rem */
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
