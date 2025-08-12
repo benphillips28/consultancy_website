@@ -130,8 +130,20 @@ h1, h2, h3 { color: #3F8285; }
 }
 .button:hover { background-color: #7f997f; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
 
-.profile { display: flex; align-items: flex-start; gap: 1rem; margin-top: 2rem; }
-.profile-photo { width: 150px; height: auto; border-radius: 8px; object-fit: cover; max-width: 100%; }
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+}
 
 .profiles {
   display: flex;
@@ -150,7 +162,7 @@ h1, h2, h3 { color: #3F8285; }
 }
 
 .profile-card img {
-  max-width: 85%;
+  max-width: 42.5%;
   height: auto;
   border-radius: 8px;
   margin: 0 auto 1rem;
@@ -183,7 +195,14 @@ h1, h2, h3 { color: #3F8285; }
   padding: 0;
 }
 .sidepicture-section.reverse { flex-direction: row-reverse; }
-.sidepicture-image { width: 500px; height: 300px; object-fit: cover; border-radius: 8px; flex-shrink: 0; margin-top: 6rem; }
+.sidepicture-image {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-top: 6rem;
+}
 .sidepicture-text { flex: 1; display: flex; flex-direction: column; justify-content: flex-start; }
 .sidepicture-text p { margin: 0.5rem 0; }
 .sidepicture-text li { margin-left: 1.5rem; }
@@ -216,7 +235,5 @@ h1, h2, h3 { color: #3F8285; }
   .testimonials-image {
     width: calc(90% - 1rem);
     height: auto;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
 }
