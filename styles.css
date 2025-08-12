@@ -247,18 +247,18 @@ h1, h2, h3 { color: #3F8285; }
   }
 }
 
-/* More intro padding on desktop */
 @media (min-width: 900px) {
-  .container-lg.text-center {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .container-lg.text-center,
+  .container-md.text-center {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
   }
 }
 
-/* Even more on very large monitors */
 @media (min-width: 1400px) {
-  .container-lg.text-center {
-    padding-left: 6rem;
-    padding-right: 6rem;
+  .container-lg.text-center,
+  .container-md.text-center {
+    padding-left: 9rem !important;
+    padding-right: 9rem !important;
   }
 }
