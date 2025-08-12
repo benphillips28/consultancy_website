@@ -28,7 +28,7 @@ header {
 }
 
 header img {
-  height: 85px;
+  height: 65px;
   width: auto;
 }
 
@@ -60,7 +60,12 @@ section {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+}
+
+/* keep small icons inline within headings/text */
+h1 img, h2 img, h3 img, p img {
+  display: inline;
+  vertical-align: middle;
 }
 
 .contact-icon {
