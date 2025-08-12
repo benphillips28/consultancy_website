@@ -1,4 +1,4 @@
-body {
+body { 
   font-family: system-ui, sans-serif;
   margin: 0;
   padding: 0;
@@ -244,5 +244,12 @@ h1, h2, h3 { color: #3F8285; }
   .testimonials-image {
     width: calc(90% - 1rem);
     height: auto;
+  }
+}
+
+/* EXTRA PADDING FOR INTRO SECTIONS ON DESKTOP ONLY */
+@media (min-width: 900px) {
+  section.container-lg.text-center {
+    padding: 4rem 2rem; /* top/bottom 4rem, left/right 2rem */
   }
 }
