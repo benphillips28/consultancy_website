@@ -135,11 +135,46 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
-/* Sidepicture Section */
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.profile-card {
+  flex: 1 1 45%;
+  max-width: 45%;
+  text-align: center;
+}
+
+.profile-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  [style*="max-width: 45%"],
+  [style*="flex: 1 1 45%"] {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+
+  img[style*="height: 100%"] {
+    height: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    display: block !important;
+  }
+}
 
 .sidepicture-section {
   display: flex;
-  align-items: flex-start; /* aligns top of image with top of text content */
+  align-items: flex-start;
   gap: 1rem;
   margin-bottom: 3rem;
   max-width: 1200px;
@@ -176,7 +211,6 @@ h1, h2, h3 {
   margin-left: 1.5rem;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 900px) {
   .sidepicture-section,
   .sidepicture-section.reverse {
@@ -193,6 +227,7 @@ h1, h2, h3 {
   .sidepicture-image {
     width: 80%;
     height: auto;
+    margin-top: 1rem;
   }
 
   .sidepicture-heading,
@@ -201,9 +236,20 @@ h1, h2, h3 {
   }
 }
 
-<style>
-  .content-box {
-    width: 50%;
+@media (max-width: 640px) {
+  .profile-card {
+    flex: 1 1 100%;
+    max-width: 100%;
     text-align: left;
   }
-</style>
+
+  .profile-card img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.content-box {
+  width: 50%;
+  text-align: left;
+}
