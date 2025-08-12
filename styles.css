@@ -33,8 +33,18 @@ header img {
 }
 
 @media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
   header img {
     height: 65px;
+    margin-bottom: 0.5rem;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0.25rem 0.5rem;
   }
 }
 
@@ -192,14 +202,12 @@ h1, h2, h3 {
     max-width: 100% !important;
     text-align: left !important;
   }
-
   img[style*="height: 100%"] {
     height: auto !important;
     max-width: 100% !important;
     width: 100% !important;
     display: block !important;
   }
-
   .profile-card img {
     max-width: 70%;
   }
@@ -251,18 +259,15 @@ h1, h2, h3 {
     align-items: center;
     text-align: center;
   }
-
   .sidepicture-text li {
     margin-left: 0;
     text-align: left;
   }
-
   .sidepicture-image {
     width: 90%;
     height: auto;
     margin-top: 1rem;
   }
-
   .sidepicture-heading,
   .sidepicture-heading.align-right {
     text-align: center;
@@ -275,7 +280,6 @@ h1, h2, h3 {
     max-width: 100%;
     text-align: left;
   }
-
   .profile-card img {
     margin-left: auto;
     margin-right: auto;
@@ -297,7 +301,6 @@ h1, h2, h3 {
   }
 }
 
-/* Testimonials section with quotes and image inside box */
 .testimonials-quotes {
   max-width: 1150px;
   width: 95%;
@@ -323,6 +326,8 @@ h1, h2, h3 {
   border-radius: 8px;
   margin-top: 1.5rem;
   display: block;
-  max-width: 100%;
+  max-width: 300px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
