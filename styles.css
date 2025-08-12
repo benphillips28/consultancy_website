@@ -7,6 +7,17 @@ body {
   background-color: #f5f8f5;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -44,6 +55,12 @@ section {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .contact-icon {
@@ -149,7 +166,7 @@ h1, h2, h3 {
 }
 
 .profile-card img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -225,7 +242,7 @@ h1, h2, h3 {
   }
 
   .sidepicture-image {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-top: 1rem;
   }
