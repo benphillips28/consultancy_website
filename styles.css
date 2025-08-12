@@ -270,3 +270,13 @@ h1, h2, h3 {
   width: 50%;
   text-align: left;
 }
+
+@media (min-width: 641px) {
+  .profiles { align-items: stretch; }
+  .profile-card { display: flex; flex-direction: column; }
+  .profile-card img {
+    height: 340px;   /* pick the uniform height you like (300–360px works well) */
+    width: 100%;
+    object-fit: cover;
+  }
+}
