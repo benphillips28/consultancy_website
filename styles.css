@@ -246,12 +246,3 @@ h1, h2, h3 { color: #3F8285; }
     height: auto;
   }
 }
-
-/* HUGE padding test for desktop intro boxes */
-@media (min-width: 900px) {
-  .container-lg.text-center,
-  .container-md.text-center {
-    padding-left: 15rem !important;
-    padding-right: 15rem !important;
-  }
-}
