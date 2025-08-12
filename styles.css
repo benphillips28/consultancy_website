@@ -159,6 +159,7 @@ h1, h2, h3 { color: #3F8285; }
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .profile-card img {
@@ -169,10 +170,16 @@ h1, h2, h3 { color: #3F8285; }
   display: block;
 }
 
+.profile-card h3,
+.profile-card p {
+  flex-grow: 1;
+}
+
 @media (max-width: 640px) {
   .profiles {
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
+    gap: 2rem;
   }
   .profile-card {
     flex: 1 1 100% !important;
@@ -181,6 +188,7 @@ h1, h2, h3 { color: #3F8285; }
   }
   .profile-card img {
     max-width: 70%;
+    margin-left: 0;
   }
 }
 
@@ -211,11 +219,12 @@ h1, h2, h3 { color: #3F8285; }
   .sidepicture-section, .sidepicture-section.reverse {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
+  .sidepicture-text { text-align: left; }
   .sidepicture-text li { margin-left: 0; text-align: left; }
   .sidepicture-image { width: 90%; height: auto; margin-top: 1rem; }
-  .sidepicture-heading, .sidepicture-heading.align-right { text-align: center; }
+  .sidepicture-heading, .sidepicture-heading.align-right { text-align: left; }
 }
 
 .section-image { display: block; margin: 1rem auto 0; width: 100%; }
