@@ -79,14 +79,6 @@ nav a:hover {
 .text-center { text-align: center; }
 .pad-15pct { padding-left: 15%; padding-right: 15%; }
 
-@media (min-width: 900px) {
-  .container-lg.text-center,
-  .container-md.text-center {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-}
-
 main section { padding: 0; max-width: 800px; margin: auto; }
 section {
   margin: 1.5rem 0 3rem;
@@ -186,6 +178,8 @@ h1, h2, h3 { color: #3F8285; }
 @media (max-width: 640px) {
   .profiles {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
   }
   .profile-card {
     flex: 1 1 100% !important;
@@ -250,5 +244,12 @@ h1, h2, h3 { color: #3F8285; }
   .testimonials-image {
     width: calc(90% - 1rem);
     height: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .container-lg.text-center {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
