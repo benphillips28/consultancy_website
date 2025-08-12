@@ -187,3 +187,9 @@ h1, h2, h3 { color: #3F8285; }
 /* Util for images inside sections (e.g., testimonials image) */
 .section-image { display: block; margin: 1rem auto 0; width: 100%; }
 @media (min-width: 900px) { .section-image { width: 50%; } }
+
+.testimonials-section .sidepicture-image {
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
