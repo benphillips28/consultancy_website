@@ -35,27 +35,23 @@ header img {
 
 @media (max-width: 640px) {
   header {
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
-  }
-
-  header img {
-    height: 65px;
+    align-items: center;
   }
 
   nav {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem; /* reduced spacing */
   }
 
   nav a {
+    display: inline-block;
     margin: 0;
-    padding: 0.25rem 0;
-    font-size: 0.9rem;
+    padding: 0.2rem 0.3rem; /* tighter padding */
+    font-size: 0.9rem; /* slightly smaller text */
   }
 }
 
