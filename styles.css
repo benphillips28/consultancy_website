@@ -192,19 +192,45 @@ h1, h2, h3 { color: #3F8285; }
 .section-image { display: block; margin: 1rem auto 0; width: 100%; }
 @media (min-width: 900px) { .section-image { width: 50%; } }
 
+.testimonials-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.testimonials-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .testimonials-image {
   width: 500px;
   height: 450px;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+  flex-shrink: 0;
   display: block;
-  margin: 1rem auto 0.5rem;
+  margin: 0.5rem 0;
 }
 
 @media (max-width: 900px) {
+  .testimonials-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .testimonials-text {
+    text-align: left;
+  }
   .testimonials-image {
-    width: 90%;
+    width: 40%;
     height: auto;
+    border-radius: 8px;
   }
 }
