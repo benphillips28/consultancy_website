@@ -79,6 +79,14 @@ nav a:hover {
 .text-center { text-align: center; }
 .pad-15pct { padding-left: 15%; padding-right: 15%; }
 
+@media (min-width: 900px) {
+  .container-md,
+  .container-lg {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 main section { padding: 0; max-width: 800px; margin: auto; }
 section {
   margin: 1.5rem 0 3rem;
