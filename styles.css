@@ -28,10 +28,14 @@ header {
 }
 
 header img {
-  max-height: 75px;
-  height: auto;
+  height: 81px;
   width: auto;
-  display: block;
+}
+
+@media (max-width: 640px) {
+  header img {
+    height: 65px;
+  }
 }
 
 nav a {
@@ -266,32 +270,6 @@ h1, h2, h3 {
 }
 
 @media (max-width: 640px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  header img {
-    max-height: 65px;
-    height: auto;
-    width: auto;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem 1rem;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0;
-    padding: 0.25rem 0.25rem;
-  }
-
   .profile-card {
     flex: 1 1 100%;
     max-width: 100%;
@@ -319,15 +297,7 @@ h1, h2, h3 {
   }
 }
 
-/* Testimonials page: quotes above, image below */
-.testimonials-intro {
-  max-width: 900px;
-  margin: 0 auto 1rem;
-  background: transparent;
-  box-shadow: none;
-  padding: 0 1rem;
-}
-
+/* Testimonials section with quotes and image inside box */
 .testimonials-quotes {
   max-width: 1150px;
   width: 95%;
@@ -349,10 +319,10 @@ h1, h2, h3 {
   margin: 0.35rem 0 1rem;
 }
 
-.testimonials-image {
-  width: 95%;
-  max-width: 1150px;
-  margin: 0 auto 2rem;
+.testimonials-quotes img {
   border-radius: 8px;
+  margin-top: 1.5rem;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
