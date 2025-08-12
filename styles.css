@@ -27,7 +27,6 @@ header {
   color: white;
 }
 
-/* Keep aspect ratio; 25% larger on desktop via max-height */
 header img {
   max-height: 75px;
   height: auto;
@@ -267,7 +266,6 @@ h1, h2, h3 {
 }
 
 @media (max-width: 640px) {
-  /* Mobile header layout: stack logo and nav, keep logo proportionate */
   header {
     flex-direction: column;
     align-items: center;
@@ -321,61 +319,40 @@ h1, h2, h3 {
   }
 }
 
-/* Testimonials hero with background image */
-.testimonials-hero {
-  position: relative;
+/* Testimonials page: quotes above, image below */
+.testimonials-intro {
+  max-width: 900px;
+  margin: 0 auto 1rem;
+  background: transparent;
+  box-shadow: none;
+  padding: 0 1rem;
+}
+
+.testimonials-quotes {
+  max-width: 1150px;
+  width: 95%;
+  margin: 0 auto 1rem;
+  background: #e4f4f5;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.testimonials-quotes blockquote {
+  margin: 0 0 1rem;
+  padding: 0;
+  font-style: italic;
+}
+
+.testimonials-quotes .attribution {
+  font-weight: 700;
+  margin: 0.35rem 0 1rem;
+}
+
+.testimonials-image {
   width: 95%;
   max-width: 1150px;
-  margin: 0 auto;
-  overflow: hidden;
+  margin: 0 auto 2rem;
   border-radius: 8px;
-  background: url("images/footprints.jpg") center/cover no-repeat;
-}
-
-/* Content layer */
-.testimonials-hero__content {
-  position: relative;
-  padding: clamp(1rem, 3vw, 2rem);
-  min-height: 420px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-
-/* Subtle dark overlay for readability on busy areas */
-.testimonials-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35));
-}
-
-/* Quote blocks */
-.testimonial {
-  color: #fff;
-  text-align: left;
-  backdrop-filter: blur(1px);
-  background: rgba(0,0,0,0.25);
-  border-radius: 8px;
-  padding: 0.9rem 1rem;
-  line-height: 1.6;
-}
-
-.testimonial em {
-  font-style: italic;
   display: block;
-}
-
-.testimonial .attribution {
-  margin-top: 0.5rem;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-/* Make layout mobile-friendly */
-@media (max-width: 640px) {
-  .testimonials-hero__content {
-    grid-template-columns: 1fr;
-    min-height: 0;
-  }
 }
