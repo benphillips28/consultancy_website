@@ -137,14 +137,6 @@ h1, h2, h3 { color: #3F8285; }
   margin-top: 2rem;
 }
 
-.profile-photo {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  max-width: 100%;
-}
-
 .profiles {
   display: flex;
   flex-wrap: wrap;
@@ -164,7 +156,7 @@ h1, h2, h3 { color: #3F8285; }
 
 .profile-card img {
   max-width: 60%;
-  height: 300px;
+  height: 350px;
   width: auto;
   max-width: none;
   object-fit: cover;
