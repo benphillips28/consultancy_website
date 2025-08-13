@@ -164,7 +164,7 @@ h1, h2, h3 { color: #3F8285; }
 
 .profile-card img {
   max-width: 60%;
-  height: 260px;
+  height: 300px;
   width: auto;
   max-width: none;
   object-fit: cover;
